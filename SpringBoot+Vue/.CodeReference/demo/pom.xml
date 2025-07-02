@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- 这行代码声明了 XML 文档的版本和编码格式 -->
+<!-- 这是 Maven 项目的根元素，定义了项目的基本信息和结构 -->
+<!-- xmlns 是 XML 命名空间，用于定义 XML 文档的命名空间。 -->
+<!-- xmlns:xsi 是 XML 命名空间前缀，用于定义 XML 文档的模式位置。 -->
+<!-- xsi:schemaLocation 是 XML 模式位置，用于定义 XML 文档的模式位置。 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 解释下面一段： -->
+    <!-- 这段代码定义了 Maven 项目的父项目，并指定了 Spring Boot 的版本。 -->
+    <!-- 父项目是 Spring Boot 的 starter 项目，提供了 Spring Boot 的依赖管理。 -->
+    <!-- 版本号 3.4.4 是 Spring Boot 的版本。 -->
+    <!-- 相对路径为空，表示从中央仓库查找父项目。 -->
+        <!-- 什么是中央仓库 -->
+        <!-- 中央仓库是 Maven 的默认仓库，用于存储所有 Maven 依赖的库文件。 -->
+        <!-- 什么是相对路径 -->
+        <!-- 相对路径是相对于当前项目的路径。 -->
+        <!-- 什么是 lookup parent from repository -->
+        <!-- 从仓库中查找父项目。 -->
+    <parent>
+        <!-- grougid：用来标识一个项目，通常是组织名。 -->
+        <!-- artifactId：用来标识一个项目，通常是项目名。 -->
+        <!-- version：用来标识一个项目，通常是版本号。 -->
+        <!-- relativePath：用来标识一个项目，通常是相对路径。 -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <!-- 这里为什么又定义了groupId、artifactId、version、name、description、url -->
+    <!-- 因为这些是 Maven 项目的配置信息。 -->
+    <!-- groupId：用来标识一个项目，通常是组织名。 -->
+    <!-- artifactId：用来标识一个项目，通常是项目名。 -->
+    <!-- version：用来标识一个项目，通常是版本号。 -->
+    <!-- name：用来标识一个项目，通常是项目名。 -->
+    <!-- description：用来标识一个项目，通常是项目描述。 -->
+    <!-- url：用来标识一个项目，通常是项目地址。 -->
+    <groupId>org.learn</groupId>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>demo</name>
+    <description>demo</description>
+
+    <!-- 这里是项目的 URL，通常是项目的主页或文档地址 -->
+    <url>http://example.com/demo</url>
+    
+    <!-- 这里定义了项目的许可证信息，说明项目的使用条款 -->
+    <licenses>
+        <license>
+            <!-- 许可证的名称，例如 Apache 2.0 -->
+            <name>Apache 2.0</name>
+            <!-- 许可证的 URL，指向许可证的详细信息 -->
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    
+    <!-- 这里定义了项目的开发者信息 -->
+    <developers>
+        <developer>
+            <!-- 开发者的名字 -->
+            <name>zhangsan</name>
+            <!-- 开发者的电子邮件地址 -->
+            <email>zhangsan@example.com</email>
+        </developer>
+    </developers>
+    
+    <!-- 这里定义了源代码管理（SCM）信息 -->
+    <scm>
+        <!-- 代码仓库的连接地址 -->
+        <connection>scm:git:git@example.com:demo.git</connection>
+        <!-- 开发者连接地址，通常与连接地址相同 -->
+        <developerConnection>scm:git:git@example.com:demo.git</developerConnection>
+        <!-- 代码的标签信息 -->
+        <tag>v0.0.1</tag>
+        <!-- 代码仓库的 URL -->
+        <url>http://example.com/demo</url>
+    </scm>
+
+    <!-- 这里定义了项目使用的 Java 版本 -->
+    <properties>
+        <!-- 指定 Java 版本为 17 -->
+        <java.version>17</java.version>
+    </properties>
+
+    <!-- 这里定义了项目依赖的库 -->
+    <dependencies>
+        <!-- 添加 Spring Boot 的 starter 依赖，提供了基本的 Spring Boot 功能和自动配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- 添加 Spring Boot 的开发工具依赖，提供热重载功能，便于开发时快速查看修改效果 -->
+        <!-- 添加 Spring Boot 的开发工具依赖，提供热重载功能，便于开发时快速查看修改效果 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+            <!-- spring-boot-devtools 提供了一些配置选项，例如： -->
+            <!-- 1. restart.enabled: 是否启用自动重启功能，默认为 true。 -->
+            <!-- 2. restart.exclude: 指定不需要重启的文件或目录。 -->
+            <!-- 3. livereload.enabled: 是否启用 LiveReload 功能，默认为 true。 -->
+            <!-- 4. livereload.port: 配置 LiveReload 的端口，默认为 35729。 -->
+            <!-- 这些配置选项可以在 application.properties 文件中进行设置。 -->
+        </dependency>
+
+
+        <!-- 添加 Lombok 依赖，简化 Java 代码的编写，自动生成 getter、setter 等方法 -->
+        <!-- 什么是getter，setter方法 -->
+        <!-- getter方法：获取对象的属性值 -->
+        <!-- setter方法：设置对象的属性值 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 添加 Spring Boot 的测试依赖，提供测试功能和工具，便于编写和运行测试用例 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 添加 Spring Boot 的 Web 依赖，提供 Web 开发功能和工具，便于编写和运行 Web 应用 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.5.0</version> <!-- 使用最新版本 -->
+        </dependency>
+        
+        
+    </dependencies>
+
+    <!-- 这里开始定义构建过程 -->
+    <build>
+        <!-- 定义构建过程中使用的插件 -->
+        <plugins>
+            <!-- Maven 编译插件，用于编译 Java 代码 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <!-- 配置注解处理器路径 -->
+                    <!-- 注解是什么 -->
+                    <!-- 注解是 Java 提供的一种元数据机制，用于在代码中添加额外的信息。 -->
+                    <!-- 注解可以用于类、方法、变量等，提供关于这些元素的额外信息。 -->
+                    <!-- 注解通常以 @ 符号开头，例如 @Override、@Deprecated、@SuppressWarnings 等。 -->
+                    <annotationProcessorPaths>
+                        <path>
+                            <!-- 指定 Lombok 作为注解处理器 -->
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+            <!-- Spring Boot Maven 插件，用于打包和运行 Spring Boot 应用 -->
+            <!-- 什么是打包 -->
+            <!-- 打包是将项目编译后的代码和资源文件打包成一个可执行的文件或文件夹。 -->
+            <!-- 打包的目的是将项目部署到服务器或发布到仓库中。 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 配置排除的依赖项 -->
+                    <!-- 什么是排除的依赖项 -->
+                    <!-- 排除的依赖项是 Maven 在打包时不需要包含的依赖项。 -->
+                    <!-- 排除的依赖项通常是项目中不需要的依赖项，例如测试依赖项。 -->
+                    <excludes>
+                        <exclude>
+                            <!-- 排除 Lombok 依赖，避免在打包时包含 -->
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

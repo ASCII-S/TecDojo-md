@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "9d6248acb0ee46f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d3d09fb5c401e0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19ee57b5c71224d5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5ab33997142196b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c39a181336c073b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d481584b0779524d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "291aeccc28c08101",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3cac5ea6be5f4b8f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de4587dd1a7c3b28",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1aa05031f91872c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20121301f29e5358",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "C++primer/13-拷贝控制.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 13-拷贝控制"
+            }
+          },
+          {
+            "id": "57502652fbe84702",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "C++primer/CodeReference/CompilerNotes.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "CompilerNotes 的出链列表"
+            }
+          },
+          {
+            "id": "614c6f7b069e87b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a784b804207f80f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "7278f3fb261a2941",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "19ee57b5c71224d5",
+  "lastOpenFiles": [
+    "md/ParaProgramBook/ipynb/notes/点对点通信.ipynb",
+    "md/ParaProgramBook/ipynb/notes/基本用法.ipynb",
+    "md/ParaProgramBook/ipynb/notes/大纲安排.ipynb",
+    "md/ParaProgramBook/ipynb/notes/具体代码-gpt.ipynb",
+    "md/ParaProgramBook/ipynb/notes/全对距离信息-背景知识.ipynb",
+    "md/ParaProgramBook/ipynb/notes/举个例子解释原子变量的多个操作可能导致错误.ipynb",
+    "md/ParaProgramBook/ipynb/notes/operator是什么.ipynb",
+    "md/ParaProgramBook/ipynb/notes/MPI集体通信.ipynb",
+    "md/ParaProgramBook/ipynb/notes/notes.ipynb",
+    "md/ParaProgramBook/ipynb/notes/mpi基础.ipynb",
+    "md/ParaProgramBook/ipynb/notes/MPI 数据分散与全局操作.ipynb",
+    "md/ParaProgramBook/notes/点对点通信.md",
+    "md/ParaProgramBook/notes/大纲安排.md",
+    "md/ParaProgramBook/notes/基本用法.md",
+    "md/ParaProgramBook/notes/具体代码-gpt.md",
+    "md/ParaProgramBook/notes/全对距离信息-背景知识.md",
+    "md/ParaProgramBook/notes/举个例子解释原子变量的多个操作可能导致错误.md",
+    "md/ParaProgramBook/notes/operator是什么.md",
+    "md/ParaProgramBook/notes/notes.md",
+    "md/ParaProgramBook/notes/MPI集体通信.md",
+    "md/ParaProgramBook/notes/mpi基础.md",
+    "md/ParaProgramBook/notes/MPI 数据分散与全局操作.md",
+    "md/ParaProgramBook/notes/lambda表达式是什么.md",
+    "md/ParaProgramBook/notes/lambda表达式是什么 2.md",
+    "md/ParaProgramBook/notes/c++多线程语法-来源菜鸟教程.md",
+    "md/ParaProgramBook/ParaProgramBook.md",
+    "md/ParaProgramBook/09-MPI入门.md",
+    "md/ParaProgramBook/07-cuda.md",
+    "md/ParaProgramBook/09-MPI.md",
+    "md/ParaProgramBook/06-openmp.md",
+    "md/ParaProgramBook/05-高级C++11多线程.md",
+    "md/ParaProgramBook/04-c++多线程编程.md",
+    "md/others/Jobs/QA/interview_questions.md",
+    "md/others/Jobs/QA/07_其他与综合能力面试问答.md",
+    "md/others/Jobs/QA/06_论文与技术文档面试问答.md",
+    "md/others/Jobs/QA/05_技能清单面试问答.md",
+    "未命名.canvas"
+  ]
+}

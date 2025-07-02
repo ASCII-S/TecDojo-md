@@ -1,0 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+
+- 我是一个完全java新手，只有c++基础，希望通过这个项目能够快速学习springboot的整体开发
+- 对代码的每一句，我都需要你使用中文或者英文做解释，从语法到功能的解释
