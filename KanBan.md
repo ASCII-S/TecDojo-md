@@ -55,22 +55,14 @@ if (pausedProjects.length > 0) {
         ])
     );
 }
-
-// 第四行：最近修改的文件
-const recentFiles = allPages.filter(p => p.file.mtime >= sevenDaysAgo);
-if (recentFiles.length > 0) {
-    dv.header(4, "📝 本周修改文件");
-    dv.table(
-        ["文件名", "修改时间", "所属项目"],
-        recentFiles.map(p => [
-            p.file.link,
-            p.file.mtime,
-            p.file.folder || "根目录"
-        ])
-    );
-}
 ```
 
+## 📕最近阅读
+```dataview
+TABLE file.name as 文件名, file.mtime as 更新时间, file.folder as 一级目录
+FROM ""
+SORT file.mtime DESC
+```
 ---
 
 > [!tip] 提示
