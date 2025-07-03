@@ -1,23 +1,3 @@
----
-jupytext:
-  formats: md:markdown,ipynb/BookName/BookName.ipynb:notebook
-  text_representation:
-    extension: .md
-    format_name: markdown
-    format_version: '1.3'
-    jupytext_version: 1.13.8
-kernelspec:
-  display_name: C++
-  language: C++
-  name: xcpp
-language_info:
-  codemirror_mode: text/x-c++src
-  file_extension: .cpp
-  mimetype: text/x-c++src
-  name: c++
-  version: '11'
----
-
 # 《BookName》学习笔记
 
 ## 📝 内容概览
@@ -54,3 +34,6 @@ gantt
 ## 📚 参考资源
 - 官方网站：[链接](URL)
 - 配套代码：[[.CodeReference/README]]
+
+## 📝 书写规范
+详细的书写规范请参考：[[WritingStandards]]
