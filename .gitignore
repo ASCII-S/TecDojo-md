@@ -1,3 +1,5 @@
 *./
 .obsidian/
 .obsidianignore
+.vscode/
+!.cursor/rules/*
