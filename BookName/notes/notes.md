@@ -1,17 +1,3 @@
----
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.14.4
-  kernelspec:
-    display_name: C++
-    language: c++
-    name: xcpp11
----
-
 # 碎片知识索引
 
 ## 🧠 核心概念
